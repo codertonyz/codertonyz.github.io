@@ -2,228 +2,1087 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tony Tomy</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- Default Color Skin -->
+    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+
+    <!-- style switcher for demo purpose only -->
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css" />
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css"
+        disabled />
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css"
+        disabled />
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css"
+        disabled />
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css"
+        disabled />
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
 
 </head>
 
 <body>
 
 
+    <!------- Preloader Section Start ------>
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!------- Preloader Section End -------->
 
-    <header>
-        <a href="#home" class="logo">Portfolio</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
+
+
+
+    <!------- Header Section Start ------>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="index.html">T</a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
     </header>
+    <!------- Header Section End ------>
 
 
 
-    <section class="banner" id="home">
-        <div class="textBx">
-            <h2>Hello, I'm<br><span>Tony Tomy.</span></h2>
-            <h3>I'm a Full Stack Android Developer</h3>
-            <a href="#about" class="btn">About Me</a>
+
+    <!------- Navigation Menu Section Start ------>
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#home" class="link-item inner-shadow active">home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">about</a></li>
+                <li><a href="#services" class="link-item outer-shadow hover-in-shadow">services</a></li>
+                <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a></li>
+                <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">testimonial</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>
+            </ul>
         </div>
-    </section>
+        <!-------- Copyright Text --------->
+        <p class="copyright-text">&copy; 2021 The Cybersoftov</p>
+
+    </nav>
+
+    <div class="fade-out-effect"></div>
+    <!------- Navigation Menu Section End ------>
 
 
 
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-        </div>
-        <div class="content">
-            <div class="contentBx w50">
-                <h3>I'm a Full Stack Android Developer.</h3>
-                <p>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating
-                    software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. What
-                    would you do if you had a software expert available at your fingertips?<br><br>
-                    Fast-forward to today, and I've had the privilege of working at a start-up. 
-                    My main focus these days is to learn new trends in Coding.</p>
-            </div>
-            <div class="w50">
-                <img src="img/img1.jpg" class="img" alt="Image 1">
-            </div>
-        </div>
-    </section>
 
-
-
-    <section class="services" id="services">
-        <div class="heading white">
-            <h2>My Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus, nesciunt recusandae
-                optio maxime eius site.!</p>
-        </div>
-        <div class="content">
-            <div class="servicesBx">
-                <img src="img/icon1.png" alt="Icon 1">
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
+    <!----------- Home Section Start ----------->
+    <section class="home-section section active" id="home">
+        <!----------- Effect Wrap Start ----------->
+        <div class="effect-wrap">
+            <div class="effect effect-1"></div>
+            <div class="effect effect-2">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="servicesBx">
-                <img src="img/icon2.png" alt="Icon 2">
-                <h2>Web Developement</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
-            </div>
-            <div class="servicesBx">
-                <img src="img/icon3.png" alt="Icon 3">
-                <h2>Android App</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
-            </div>
-            <div class="servicesBx">
-                <img src="img/icon4.png" alt="Icon 4">
-                <h2>Photography</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
-            </div>
-            <div class="servicesBx">
-                <img src="img/icon5.png" alt="Icon 5">
-                <h2>Content Writing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
-            </div>
-            <div class="servicesBx">
-                <img src="img/icon6.png" alt="Icon 6">
-                <h2>Video Editing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero, in rem aut sint corrupti
-                    mollitia ex. Facere, dolore dolorum.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="work" id="work">
-        <div class="heading">
-            <h2>Our Lastest Work</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, omnis!</p>
-        </div>
-        <div class="content">
-            <div class="workBx">
-                <img src="img/product1.jpg" alt="Product 1">
-            </div>
-            <div class="workBx">
-                <img src="img/product2.jpg" alt="Product 2">
-            </div>
-            <div class="workBx">
-                <img src="img/product3.jpg" alt="Product 3">
-            </div>
-            <div class="workBx">
-                <img src="img/product4.jpg" alt="Product 4">
+            <div class="effect effect-3"></div>
+            <div class="effect effect-4"></div>
+            <div class="effect effect-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
-        <div class="heading">
-            <a href="#" class="btn">View More</a>
-        </div>
-    </section>
+        <!----------- Effect Wrap End ------------->
 
-
-
-    <section class="testimonial" id="testimonial">
-        <div class="heading">
-            <h2>Testimonial</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, cumque!</p>
-        </div>
-        <div class="content">
-            <div class="testimonialBx">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas modi non quaerat error illo
-                    ipsum,
-                    quisquam labore alias reiciendis consequuntur vitae iusto.</p>
-                <h3>Someone Famous<br><span>Creative Designer</span></h3>
-            </div>
-            <div class="testimonialBx">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas modi non quaerat error illo
-                    ipsum,
-                    quisquam labore alias reiciendis consequuntur vitae iusto.</p>
-                <h3>Someone Famous<br><span>Creative Designer</span></h3>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <h2>Contact Me</h2>
-            <p>Although I'm not currently looking for any new opportunities, my inbox is always open. 
-                Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Ernakulam,<br>Kerala,India,<br>686681</p>
-                        </div>
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <p>Hello</p>
+                    <h2>I'm Tony Tomy</h2>
+                    <h1>Full Stack Android Developer</h1>
+                    <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box inner-shadow">
+                        <img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic" />
                     </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>+91 8075019202</p>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------- Home Section End ------------->
+
+
+
+
+    <!----------- About Section Start ------------->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="main info">About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-img">
+                    <div class="img-box inner-shadow">
+                        <img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic" />
                     </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
+                    <!--------- Social Link Start --------->
+                    <div class="social-links">
+                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!--------- Social Link End ----------->
+                </div>
+                <div class="about-info">
+                    <p>
+                        <span>Hi! My name is Tony Tomy. I am a Full Stack Android
+                            Developer.</span>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Recusandae dolor eaque inventore voluptate dolorem? Aliquid amet,
+                        obcaecati architecto maiores est nobis. Eaque unde dicta atque
+                        facere cumque! Dolorum, excepturi consequatur.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+                        beatae temporibus ad distinctio eligendi totam nesciunt nemo natus
+                        laboriosam reprehenderit!
+                    </p>
+                    <a href="cv/cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+                    <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+                </div>
+            </div>
+
+            <!----------- About Tabs Start ------------->
+            <div class="row">
+                <div class="about-tabs">
+                    <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
+                    <span class="tab-item" data-target=".experience">experience</span>
+                    <span class="tab-item" data-target=".education">education</span>
+                </div>
+            </div>
+            <!----------- About Tabs End --------------->
+
+            <!----------- About Skills Start ----------->
+            <div class="row">
+                <div class="skills tab-content active">
+                    <div class="row">
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>Html</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(50% - 14px)">
+                                    <span>50%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>tonytomy321@gmaail.com</p>
+                        <!------- skill item End ---------->
+
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>Javascript</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(60% - 14px)">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------- skill item End ---------->
+
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>bootstrap</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(70% - 14px)">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------- skill item End ---------->
+
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>jQuery</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(80% - 14px)">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------- skill item End ---------->
+
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>angualar</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(90% - 14px)">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------- skill item End ---------->
+
+                        <!------- skill item Start -------->
+                        <div class="skill-item">
+                            <p>php</p>
+                            <div class="progress inner-shadow">
+                                <div class="progress-bar" style="width: calc(100% - 14px)">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------- skill item End ---------->
+                    </div>
+                </div>
+            </div>
+            <!----------- About Skills End ------------->
+
+            <!----------- About Experience Start ------------->
+            <div class="row">
+                <div class="experience tab-content">
+                    <div class="row">
+                        <div class="timeline">
+                            <div class="row">
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-briefcase icon"></i>
+                                        <span>Sep, 2018 - Present</span>
+                                        <h3>Full Stack Developer</h3>
+                                        <h4>Company name, india</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-briefcase icon"></i>
+                                        <span>Sep, 2016 - Oct, 2017</span>
+                                        <h3>Web Designer</h3>
+                                        <h4>Company name, india</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-briefcase icon"></i>
+                                        <span>Sep, 2014 - Jun, 2016</span>
+                                        <h3>Web Designer</h3>
+                                        <h4>Company name, india</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="formBx">
-                <form action="mailto:tonytomy321@gmaail.com?subject = Enquiry" method="post" enctype="text/plain">
-                    <h3>Message Me</h3>
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="email" name="mail" placeholder="Email">
-                    <textarea name="comment" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+            <!----------- About Experience End --------------->
+
+            <!----------- About Education Start -------------->
+            <div class="row">
+                <div class="education tab-content">
+                    <div class="row">
+                        <div class="timeline">
+                            <div class="row">
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-graduation-cap icon"></i>
+                                        <span>2012 - 2014</span>
+                                        <h3>master in computer science</h3>
+                                        <!-- <h4>College name, india</h4> -->
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-graduation-cap icon"></i>
+                                        <span>2010 - 2012</span>
+                                        <h3>master in computer science</h3>
+                                        <!-- <h4>Company name, india</h4> -->
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+
+                                <!------- Timeline item Start -------->
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner outer-shadow">
+                                        <i class="fas fa-graduation-cap icon"></i>
+                                        <span>2008 - 2010</span>
+                                        <h3>master in computer science</h3>
+                                        <!-- <h4>Company name, india</h4> -->
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Numquam molestias esse voluptatibus consequuntur!
+                                            Perferendis, ducimus?
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------- Timeline item End ---------->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------- About Education End ---------------->
+
+        </div>
+    </section>
+    <!----------- About Section End --------------->
+
+
+
+
+    <!-------------- Services Section Start ---------------->
+    <section class="service-section section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="Services">What i do</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
+
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>web Design</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
+
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>graphic Design</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
+
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>clean code</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
+
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>seo marketing</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
+
+                <!------- service item Start -------->
+                <div class="service-item">
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Great support</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            In, dolores.
+                        </p>
+                    </div>
+                </div>
+                <!------- service item End ---------->
             </div>
         </div>
     </section>
+    <!-------------- Services Section End ------------------>
 
 
 
-    <footer class="footer">
-        <div class="copyright">
-            <p>Copyright ©2021 All rights reserved to <a href="#">Tony Tomy</a></p>
+
+    <!--------------- Portfolio Section Start --------------->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="Portfolio">Lastest Works</h2>
+                </div>
+            </div>
+            <!------- portfolio filter Start -------->
+            <div class="row">
+                <div class="portfolio-filter">
+                    <span class="filter-item outer-shadow active" data-target="all">all</span>
+                    <span class="filter-item" data-target="web-application">web application</span>
+                    <span class="filter-item" data-target="photoshop">photoshop</span>
+                    <span class="filter-item" data-target="mobile-app">mobile app</span>
+                    <span class="filter-item" data-target="e-commerce">e commerce</span>
+                </div>
+            </div>
+            <!------- portfolio filter End ---------->
+
+            <!------- portfolio items Start -------->
+            <div class="row portfolio-items">
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="web-application">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-1.png" alt="portfolio 1" data-screenshots="img/portfolio/large/project-1/1.png,
+                            img/portfolio/large/project-1/2.png, 
+                            img/portfolio/large/project-1/3.png, 
+                            img/portfolio/large/project-1/4.png, 
+                            img/portfolio/large/project-1/5.png,
+                            img/portfolio/large/project-1/6.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">personal portfolio</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, Javascript</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="web-application">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-2.png" alt="portfolio 2" data-screenshots="img/portfolio/large/project-2/1.png,
+                                        img/portfolio/large/project-2/2.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">wedding couple</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, jquery</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-3.png" alt="portfolio 3" data-screenshots="img/portfolio/large/project-3/1.png,
+                            img/portfolio/large/project-3/2.png, 
+                            img/portfolio/large/project-3/3.png, 
+                            img/portfolio/large/project-3/4.png, 
+                            img/portfolio/large/project-3/5.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">product landing page</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, bootstrap-4</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="web-application">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-4.png" alt="portfolio 4"
+                                data-screenshots="img/portfolio/large/project-4/1.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">personal portfolio</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, jquery</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-5.png" alt="portfolio 5"
+                                data-screenshots="img/portfolio/large/project-5/1.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">Fitness & gym</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, bootstrap-4</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-6.png" alt="portfolio 6" data-screenshots="img/portfolio/large/project-6/1.png,
+                                        img/portfolio/large/project-6/2.png, 
+                                        img/portfolio/large/project-6/3.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">quiz application</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>html, css, Javascript</span></li>
+                                        <li>
+                                            Web - <span><a href="#">www.domain.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="mobile-app">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-7.png" alt="portfolio 7" data-screenshots="img/portfolio/large/project-7/1.png,
+                                        img/portfolio/large/project-7/2.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">xyz app</p>
+                        <!------ portfolio item details start ------->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Project brief</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Ratione culpa amet eligendi fuga nobis atque quisquam
+                                        cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                        perspiciatis quas, corrupti sunt animi consequatur magnam?
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project Info</h3>
+                                    <ul>
+                                        <li>Date - <span>2020</span></li>
+                                        <li>Client - <span>xyz</span></li>
+                                        <li>Tools - <span>java, android</span></li>
+                                        <li>
+                                            Play Store - <span><a href="#">xyz</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ portfolio item details end --------->
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+                <!------- portfolio item Start -------->
+                <div class="portfolio-item" data-category="photoshop">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/thumb/project-8.png" alt="portfolio 8" data-screenshots="img/portfolio/large/project-8/1.png,
+                                        img/portfolio/large/project-8/2.png" />
+                            <!------ view project btn------->
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="portfolio-item-title">personal portfolio</p>
+                    </div>
+                </div>
+                <!------- portfolio item End ---------->
+
+            </div>
+            <!------- portfolio items End ---------->
+
         </div>
-    </footer>
+    </section>
+    <!--------------- Portfolio Section End ----------------->
 
 
 
+
+    <!--------------- Testimonial Section Start ------------------->
+    <section class="testimonial-section section" id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="testimonial">Client Speak</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi-box">
+                    <div class="testi-slider outer-shadow">
+                        <div class="testi-slider-container">
+
+                            <!----- testi item start ----->
+                            <div class="testi-item">
+                                <i class="fas fa-quote-left left"></i>
+                                <i class="fas fa-quote-right right"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime harum nulla at
+                                    aspernatur id laborum.</p>
+                                <img src="img/testimonial/1.png" alt="testimonial">
+                                <span>Raj Himachal</span>
+                            </div>
+                            <!----- testi item end ----->
+
+                            <!----- testi item start ----->
+                            <div class="testi-item active">
+                                <i class="fas fa-quote-left left"></i>
+                                <i class="fas fa-quote-right right"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime harum nulla at
+                                    aspernatur id laborum.</p>
+                                <img src="img/testimonial/1.png" alt="testimonial">
+                                <span>Sijo Monica</span>
+                            </div>
+                            <!----- testi item end ----->
+
+                            <!----- testi item start ----->
+                            <div class="testi-item">
+                                <i class="fas fa-quote-left left"></i>
+                                <i class="fas fa-quote-right right"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime harum nulla at
+                                    aspernatur id laborum.</p>
+                                <img src="img/testimonial/1.png" alt="testimonial">
+                                <span>Sandra vera</span>
+                            </div>
+                            <!----- testi item end ----->
+
+                        </div>
+                    </div>
+                    <div class="testi-slider-nav">
+                        <span class="prev outer-shadow hover-in-shadow"><i class="fas fa-angle-left"></i></span>
+                        <span class="next outer-shadow hover-in-shadow"><i class="fas fa-angle-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- Testimonial Section End --------------------->
+
+
+
+    <!----------------- Contact Section Start --------------------->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="contact">Get In Touch</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!----- contact item start ----->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                        <p>+91 8075019202</p>
+                    </div>
+                </div>
+                <!----- contact item end ----->
+
+                <!----- contact item start ----->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <p>tf.tonykakkanad@gmail.com</p>
+                    </div>
+                </div>
+                <!----- contact item end ----->
+
+                <!----- contact item start ----->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address</span>
+                        <p>Ernakulam, Kerala, India - 686681</p>
+                    </div>
+                </div>
+                <!----- contact item end ----->
+
+            </div>
+
+            <div class="row">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="w-50">
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="text" placeholder="Name" class="input-control">
+                                </div>
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="email" placeholder="Email" class="input-control">
+                                </div>
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="text" placeholder="Subject" class="input-control">
+                                </div>
+                            </div>
+
+                            <div class="w-50">
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <textarea class="input-control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="submit-btn">
+                                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!----------------- Contact Section End ----------------------->
+
+
+
+
+    <!--------------- Portfolio popup Start ----------------->
+    <div class="pp portfolio-popup">
+        <div class="pp-details">
+            <div class="pp-details-inner">
+                <div class="pp-title">
+                    <h2>personal portfolio</h2>
+                    <p>Category - <span class="pp-project-category">Web application</span></p>
+                </div>
+                <div class="pp-project-details">
+                    <div class="row">
+                        <div class="description">
+                            <h3>Project brief</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ratione culpa amet eligendi fuga nobis atque quisquam
+                                cupiditate pariatur voluptatem unde, iste distinctio dicta
+                                perspiciatis quas, corrupti sunt animi consequatur magnam?
+                            </p>
+                        </div>
+                        <div class="info">
+                            <h3>Project Info</h3>
+                            <ul>
+                                <li>Date - <span>2020</span></li>
+                                <li>Client - <span>xyz</span></li>
+                                <li>Tools - <span>html, css, Javascript</span></li>
+                                <li> Web - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="pp-main">
+            <div class="pp-main-inner">
+                <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i
+                        class="fas fa-plus"></i>
+                </div>
+                <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+                <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
+                <div class="pp-counter">1 of 6</div>
+            </div>
+            <div class="pp-loader">
+                <div></div>
+            </div>
+            <!-- pp navigation -->
+            <div class="pp-prev"><i class="fas fa-play"></i></div>
+            <div class="pp-next"><i class="fas fa-play"></i></div>
+        </div>
+    </div>
+    <!--------------- Portfolio popup End ------------------->
+
+
+
+
+    <!--------------- Style Switcher Start - for demo purpose only ------------------->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!--------------- Style Switcher End --------------------->
+
+
+
+    <!-- Main js -->
     <script src="js/main.js"></script>
-
+    <!-- Style switcher js -->
+    <script src="js/style-switcher.js"></script>
 </body>
 
 </html>
