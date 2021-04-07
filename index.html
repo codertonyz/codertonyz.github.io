@@ -955,7 +955,7 @@
 
             <div class="row">
                 <div class="contact-form">
-                    <form method="post" action="contact/contact.php">
+                    <form method="post" name="contact_form" action="contact/contact.php">
                         <div class="row">
                             <div class="w-50">
                                 <div class="input-group outer-shadow hover-in-shadow">
@@ -1076,6 +1076,13 @@
     <script src="js/main.js"></script>
     <!-- Style switcher js -->
     <script src="js/style-switcher.js"></script>
+    <script language="JavaScript">
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("name", "req", "Please provide your name");
+        frmvalidator.addValidation("email", "req", "Please provide your email");
+        frmvalidator.addValidation("email", "email",
+            "Please enter a valid email address");
+    </script>
 </body>
 
 </html>
