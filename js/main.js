@@ -85,7 +85,7 @@
 
 
 (() => {
-    // console.log("hello world");
+
     const aboutSection = document.querySelector(".about-section"),
         tabsContainer = document.querySelector(".about-tabs");
 
@@ -336,18 +336,18 @@ function bodyScrollingToggle() {
 
 /*--------------------------------- Hide all sections except active ----------------------------------*/
 
-(() => {
+// (() => {
 
-    const sections = document.querySelectorAll(".section");
+//     const sections = document.querySelectorAll(".section");
 
-    sections.forEach((section) => {
-        if (!section.classList.contains("active")) {
-            section.classList.add("hide");
-        }
-    })
+//     sections.forEach((section) => {
+//         if (!section.classList.contains("active")) {
+//             section.classList.add("hide");
+//         }
+//     })
 
 
-})();
+// })();
 
 
 window.addEventListener("load", () => {
