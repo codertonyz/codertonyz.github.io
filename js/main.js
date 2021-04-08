@@ -40,14 +40,14 @@
                 const hash = event.target.hash;
 
                 // deactivate existing active 'section'
-                document.querySelector(".section.active").classList.add("hide");
+                // document.querySelector(".section.active").classList.add("hide");
                 document.querySelector(".section.active").classList.remove("active");
 
                 // activate new section
                 document.querySelector(hash).classList.add("active");
                 document.querySelector(hash).classList.remove("hide");
 
-                // deactivate exiting active navigation menu 'link-item'
+                // // deactivate exiting active navigation menu 'link-item'
                 navMenu.querySelector(".active").classList.add("outer-shadow", "hover-in-shadow");
                 navMenu.querySelector(".active").classList.remove("active", "inner-shadow");
 
@@ -71,7 +71,7 @@
                     fadeOutEffect();
                 }
                 // add hash (#) to url
-                // window.location.hash = hash;
+                window.location.hash = hash;
             }
         }
     })
@@ -357,3 +357,26 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 600)
 })
+
+
+//////////////////////////////////////////////////////////////
+document.onkeydown = function (e) {
+    if (event.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+        return false;
+    }
+}
